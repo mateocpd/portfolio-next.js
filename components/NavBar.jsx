@@ -27,12 +27,9 @@ const Navbar = () => {
   return (
     <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3]' : "fixed w-full h-20 z-[100] bg-[#ecf0f3]"}>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image
-          src="/../public/assets/mclogo.png"
-          alt="/"
-          width="125"
-          height="90"
-        />
+      <div>
+        <h1 className="text-5xl font-serif ml-2">MC</h1>
+      </div>
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
