@@ -72,11 +72,12 @@ const Contact = () => {
           {/* right */}
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
-              <form>
+            <form action="https://getform.io/f/29a3a169-c9b6-4d5a-8c37-8736d448b0e7" method="POST">
                 <div className="grid md:grid-cols-2 gap-4 w-full py-4 ">
                   <div className=" flex flex-col ">
                     <label className="uppercase text-sm py-2 ">Name</label>
                     <input
+                    name ='name'
                       className="border-2 rounded-lg p-3 flex border-gray-400"
                       type="text"
                     />
@@ -84,6 +85,7 @@ const Contact = () => {
                   <div className=" flex flex-col ">
                     <label className="uppercase text-sm py-2 ">Phone Number</label>
                     <input
+                    name ='phoneNumber'
                       className="border-2 rounded-lg p-3 flex border-gray-400"
                       type="text"
                     />
@@ -92,6 +94,7 @@ const Contact = () => {
                 <div className='flex flex-col py-2'>
                 <label className="uppercase text-sm py-2 ">Email</label>
                 <input
+                name ='email'
                       className="border-2 rounded-lg p-3 flex border-gray-400"
                       type="email"
                     />
@@ -99,13 +102,14 @@ const Contact = () => {
                 <div className='flex flex-col py-2'>
                 <label className="uppercase text-sm py-2 ">Subjet</label>
                 <input
+                  name='subjet' 
                       className="border-2 rounded-lg p-3 flex border-gray-400"
                       type="text"
                     />
                 </div>
                 <div className='flex flex-col py-2'>
                 <label className="uppercase text-sm py-2 ">Message</label>
-                <textarea className='border-2 rounded-lg p-3 border-gray-300' rows='10'></textarea>
+                <textarea name="message" className='border-2 rounded-lg p-3 border-gray-300' rows='10'></textarea>
                 </div>
                 <button className='w-full p-4 text-gray-100 mt-4 '>Send Message</button>
               </form>
