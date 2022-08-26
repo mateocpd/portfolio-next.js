@@ -13,7 +13,8 @@ const Certificates = () => {
         
         <Image className="rounded-xl hover:scale-105 ease-in duration-300"
           src={Certificado}
-          alt="/"/>
+          alt="/"
+          layout='responsive'/>
         </div>
         </div>
     </div>
