@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image";
-import Certificado from '/public/assets/certificado.png'
+import certificado from '/public/assets/certificado.png'
 
 const Certificates = () => {
   return (
@@ -12,7 +12,7 @@ const Certificates = () => {
         <div className="p-6 shadow-xl rounded-xl ">
         
         <Image className="rounded-xl hover:scale-105 ease-in duration-300"
-          src={Certificado}
+          src={certificado}
           alt="/"
           layout='responsive'/>
         </div>
