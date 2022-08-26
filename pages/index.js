@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import About from '../components/About'
-import Contact from '../components/Contact'
-import Main from '../components/Main'
-import Navbar from '../components/NavBar'
-import Proyects from '../components/Proyects'
-import Skills from '../components/Skills'
-import Certificates from '../components/Certificates'
+import About from '/components/About'
+import Contact from '/components/Contact'
+import Main from '/components/Main'
+import Navbar from '/components/NavBar'
+import Proyects from '/components/Proyects'
+import Skills from '/components/Skills'
+import Certificates from '/components/Certificates'
 
 export default function Home() {
   return (
