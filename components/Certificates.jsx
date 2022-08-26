@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image";
-import certificado from '/public/assets/certificado.png'
+import certificado from '/public/assets/Certificado.png'
 
 const Certificates = () => {
   return (
