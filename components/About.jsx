@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import yo from '/public/assets/yo.jpg'
 
 const About = () => {
   return (
@@ -21,7 +22,7 @@ const About = () => {
           </p>
         </div>
         <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
-            <Image className='rounded-xl' src="/../public/assets/yo.jpg" alt="/" width="300" height="400" />
+            <Image className='rounded-xl' src={yo} alt="/" width="300" height="400" />
         </div>
       </div>
     </div>
