@@ -14,22 +14,30 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    const handaleShadow = () =>{
-      if (window.scrollY >= 90){
-        setShadow(true)
-      }else{
-        setShadow(false)
+    const handaleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
       }
-    }
+    };
 
-    window.addEventListener('scroll', handaleShadow)
-  },[])
+    window.addEventListener("scroll", handaleShadow);
+  }, []);
   return (
-    <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3]' : "fixed w-full h-20 z-[100] bg-[#ecf0f3]"}>
+    <div
+      className={
+        shadow
+          ? "fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3]"
+          : "fixed w-full h-20 z-[100] bg-[#ecf0f3]"
+      }
+    >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-      <div>
-        <h1 className="text-5xl font-serif ml-2">MC</h1>
-      </div>
+        <Link href="/">
+          <h1 className="text-5xl font-serif cursor-pointer ml-10 uppercase hover:border-b">
+            MC
+          </h1>
+        </Link>
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
@@ -40,6 +48,11 @@ const Navbar = () => {
             </Link>
             <Link href="/#skills">
               <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
+            </Link>
+            <Link href="/#certificates">
+              <li className="ml-10 text-sm uppercase hover:border-b">
+                Certificates
+              </li>
             </Link>
             <Link href="/#proyects">
               <li className="ml-10 text-sm uppercase hover:border-b">
@@ -59,7 +72,9 @@ const Navbar = () => {
       </div>
 
       <div
-        className={!nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""}
+        className={
+          !nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+        }
       >
         <div
           className={
@@ -70,12 +85,11 @@ const Navbar = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <Image
-                src="/../public/assets/mclogo.png"
-                alt="/"
-                width="87"
-                height="50"
-              />
+              <Link href="/">
+                <h1 className="text-5xl font-serif cursor-pointer ml-10 uppercase hover:border-b">
+                  MC
+                </h1>
+              </Link>
               <div
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
@@ -86,45 +100,76 @@ const Navbar = () => {
             <div>
               <div className="border-b border-gray-300 my-4">
                 <p className="w-[85%] md:w-[90%] py-4">
-                  Let's build something legendary together
+                  Let&apos;s build something legendary together
                 </p>
               </div>
             </div>
             <div className="py-4 flex-col">
               <ul className="uppercase ">
                 <Link href="/">
-                  <li className="py-4 text-sm">Home</li>
+                  <li className="py-4 text-sm ml-10 uppercase hover:border-b">
+                    Home
+                  </li>
                 </Link>
-                <Link href="/">
-                  <li className="py-4 text-sm">About</li>
+                <Link href="/#about">
+                  <li className="py-4 text-sm ml-10  uppercase hover:border-b">
+                    About
+                  </li>
                 </Link>
-                <Link href="/">
-                  <li className="py-4 text-sm">Skills</li>
+                <Link href="/#skills">
+                  <li className="py-4 ml-10 text-sm uppercase hover:border-b">
+                    Skills
+                  </li>
                 </Link>
-                <Link href="/">
-                  <li className="py-4 text-sm">Proyects</li>
+                <Link href="/#certificates">
+                  <li className="py-4  ml-10 text-sm uppercase hover:border-b">
+                    Certificates
+                  </li>
                 </Link>
-                <Link href="/">
-                  <li className="py-4 text-sm">Contact</li>
+                <Link href="/#proyects">
+                  <li className="py-4 ml-10 text-sm uppercase hover:border-b">
+                    Proyects
+                  </li>
+                </Link>
+                <Link href="/#contact">
+                  <li className="py-4 ml-10 text-sm uppercase hover:border-b">
+                    Contact
+                  </li>
                 </Link>
               </ul>
               <div className="pt-40">
                 <p className="uppercase tracking-widest text-[#5651e5]">
-                  Let's connect
+                  Let&apos;s connect
                 </p>
                 <div className="flex items-center justify-between my-4 w-full sm:w-[80%] ">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaLinkedinIn />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaGithub />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <AiOutlineMail />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <BsFillPersonLinesFill />
-                  </div>
+                <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/mateocapdevila/"
+            >
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <FaLinkedinIn />
+              </div>
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/mateocpd"
+            >
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <FaGithub />
+              </div>
+            </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="mailto:mateo.capdevila2801@gmail.com?Subject=Portfolio"
+              >
+            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <AiOutlineMail />
+            </div>
+            
+              </a>
                 </div>
               </div>
             </div>
