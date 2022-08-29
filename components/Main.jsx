@@ -32,20 +32,24 @@ const Main = () => {
                 <FaGithub />
               </div>
             </a>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="mailto:mateo.capdevila2801@gmail.com?Subject=Portfolio"
-              >
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="mailto:mateo.capdevila2801@gmail.com?Subject=Portfolio"
+            >
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <AiOutlineMail />
-            </div>
-            
-              </a>
+              </div>
+            </a>
             {/* <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
               <BsFillPersonLinesFill />
             </div> */}
           </div>
+          <button className="mt-20 p-4">
+            <a href="cv.pdf" download="cv">
+              Download CV
+            </a>
+          </button>
         </div>
       </div>
     </div>
