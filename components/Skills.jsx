@@ -12,6 +12,10 @@ import mysql from "/public/assets/skills/mysql.png"
 import linux from "/public/assets/skills/linux.png"
 import python from "/public/assets/skills/python.png"
 import git from "/public/assets/skills/git.png"
+import bootstrap from "/public/assets/skills/bootstrap.png"
+import postgresql from "/public/assets/skills/postgresql.png"
+import prisma from "/public/assets/skills/prisma.png"
+import sequelize from "/public/assets/skills/sequelize.png"
 
 const Skills = () => {
   return (
@@ -200,6 +204,66 @@ const Skills = () => {
               </div>
               <div className='flex flex-col items-center justify-center'>
                 <h3>GIT</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image
+                  src={bootstrap}
+                  alt="/"
+                  width="64px"
+                  height="64px"
+                />
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <h3>BOOTSTRAP</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image
+                  src={postgresql}
+                  alt="/"
+                  width="64px"
+                  height="64px"
+                />
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <h3>POSTGRESQL</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image
+                  src={prisma}
+                  alt="/"
+                  width="64px"
+                  height="64px"
+                />
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <h3>PRISMA</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image
+                  src={sequelize}
+                  alt="/"
+                  width="64px"
+                  height="64px"
+                />
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <h3>SEQUELIZE</h3>
               </div>
             </div>
           </div>

@@ -12,7 +12,7 @@ const About = () => {
           <p className="py-2 text-gray-600">
             As an organized person capable of solving problems, I can adapt to
             any type of circumstance and likewise give the best of me in each
-            project, in this way teamwork and camaraderie are one of my
+            project, in this way teamwork and camaraderie are some of my
             strengths.
           </p>
           <p className="py-2 text-gray-600">
