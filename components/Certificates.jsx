@@ -4,7 +4,7 @@ import certificado from '../public/assets/Certifica2.jpg'
 
 const Certificates = () => {
   return (
-    <div id="certificates" className="w-full ">
+    <div id="certificates" className="w-full mt-20 ">
         <div className="max-w-[1140px] mx-auto ">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Certificates
