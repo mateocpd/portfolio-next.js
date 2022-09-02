@@ -15,7 +15,7 @@ const Proyects = () => {
         <h2 className="py-4">What I&apos;ve Build </h2>
         <div className="grid md:grid-cols-2 gap-8 ">
         <ProyectItem
-          tittle="wallet"
+          tittle="Wallet App"
           backgroundImg={walletImg}
           proyectUrl="https://henry-pf-client.vercel.app"
           repository='https://github.com/mateocpd/henry-pf-client'
