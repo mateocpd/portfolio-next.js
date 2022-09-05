@@ -18,7 +18,7 @@ const ProyectItem = ({tittle, backgroundImg, proyectUrl, repository}) => {
           <p className="pb-4 pt-2 text-white text-center ">React js</p>
 
           <a target='_blank' href={proyectUrl} rel="noreferrer">
-            <p className="text-center py-3 rounded-lg bg-white text-gray-600 font-bold text-lg cursor-pointer ">
+            <p className="text-center py-3 rounded-lg bg-white text-gray-600 font-bold text-lg cursor-pointer mb-3 ">
               Demo
             </p>
           </a>
