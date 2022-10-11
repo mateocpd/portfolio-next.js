@@ -46,7 +46,7 @@ const Main = () => {
             </div> */}
           </div>
           <button className="mt-20 p-4">
-            <a href="cv.pdf" download="cv">
+            <a href="cv.pdf" download="CV Mateo Capdevila">
               Download CV
             </a>
           </button>
