@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import walletImg from "../public/assets/proyects/wallet.png";
+import walletImg from "../public/assets/proyects/wallett.png";
 import pokemonImg from "../public/assets/proyects/pokemon.png";
 import ProyectItem from "./ProyectItem";
 
